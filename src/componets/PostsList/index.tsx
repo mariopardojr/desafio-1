@@ -22,7 +22,7 @@ const PostsList: React.FC = () => {
   }, [search, posts])
 
   return (
-    <div className='flex flex-col gap-12 px-[25%] my-24'>
+    <div className='flex flex-col gap-12 px-[10%] md:px-[25%] my-24'>
       {filteredPosts.map(post => (<PostCard key={faker.datatype.uuid()} post={post} />))}
     </div>
   )
