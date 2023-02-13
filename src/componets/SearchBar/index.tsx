@@ -33,6 +33,7 @@ const SearchBar: React.FC<Props> = ({ placeholder, label}) => {
             bg-[url("src/assets/search.svg")]
             bg-no-repeat
             bg-[left_10px_bottom_5px]
+            rounded
           '
           placeholder={placeholder}
           onChange={handleChange}

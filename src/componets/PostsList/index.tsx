@@ -19,7 +19,7 @@ const PostsList: React.FC = () => {
 
   useEffect(() => {
     filterPosts()
-  })
+  }, [search, posts])
 
   return (
     <div className='flex flex-col gap-12 px-[25%] my-24'>

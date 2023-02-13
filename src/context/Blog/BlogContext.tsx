@@ -8,7 +8,7 @@ export const BlogProvider: React.FC<Props> = ({ children }) => {
   const [posts, setPosts] = useState<Post[]>(data)
 
   return (
-    <BlogContext.Provider value={{ posts, setPosts}}>
+    <BlogContext.Provider value={{ posts, setPosts }}>
       { children }
     </BlogContext.Provider>)
 }
